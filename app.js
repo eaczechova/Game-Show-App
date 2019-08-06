@@ -117,4 +117,8 @@ function reset() {
       keyboardButtons[i].removeAttribute('disabled');
     }
   }
+
+  for(let i = 0; i < hearts.length; i++) {
+    hearts[i].setAttribute('src', 'images/liveHeart.png');
+  }
 }

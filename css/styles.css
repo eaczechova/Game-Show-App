@@ -4,7 +4,7 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  /* --color-win: #78CF82;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -13,7 +13,21 @@
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
   --font-size-medium: 20px;
+  --transition: all .2s ease-in-out; */
+
+  --color-win: #78CF82;
+  --color-lose: #D94545;
+  --color-start: #2d2e45;
+  --color-neutral: #445069;
+  --color-neutral-light: #D2D2D2;
+  --color-keys: #37474F;
+  --color-keys-light: #E5E5E5;
+  --font-size-large: 50px;
+  --font-size-medium: 20px;
+  --font-size-small: 17px;
   --transition: all .2s ease-in-out;
+  --color-btn-start: #da9057;
+
 }
 
 /* main */
@@ -39,6 +53,7 @@ h2 {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size-large);
+  font-weight: lighter;
   margin: 0;
 }
 
@@ -82,7 +97,8 @@ button {
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
-  margin-right: 2px;
+  margin-right: 3px;
+  margin-bottom: 15px;
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
@@ -112,11 +128,13 @@ button {
 }
 
 .btn__reset {
-  padding: 8px;
+  padding: 10px;
   margin: 50px auto;
-  background: #FFFFFF;
+  background: var(--color-btn-start);
   border-radius: 5px;
-  font-size: var(--font-size-medium);
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size-small);
+  box-shadow: 2px 2px 0px 0px rgba(218, 144, 87, 0.6);
 }
 
 /* Overlay */
@@ -143,7 +161,7 @@ button {
 }
 
 .start a {
-  color: var(--color-win);
+  color: #FFFFFF;;
 }
 
 .win {
