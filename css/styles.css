@@ -41,6 +41,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li, ol, ul {
@@ -96,7 +97,7 @@ button {
   font-size: var(--font-size-medium);
   height: 65px;
   width: 65px;
-  padding: 20px 1px 0 1px;
+  padding: 10px 1px 0 1px;
   margin-right: 3px;
   margin-bottom: 15px;
   color: transparent;
@@ -141,7 +142,6 @@ button {
   margin: 50px auto;
   background: var(--color-btn-start);
   border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size-small);
   box-shadow: 2px 2px 0px 0px rgba(218, 144, 87, 0.6);
 }
@@ -192,7 +192,6 @@ button {
 .lose p, .win p {
   color: #FFFFFF;
   font-size: var(--font-size-medium);
-  font-family: 'Open Sans', sans-serif;
 }
 
 .lose .btn__reset, .win .btn__reset {

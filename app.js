@@ -97,8 +97,7 @@ function checkWin(score) {
     overlay.appendChild(msg);
     setTimeout(function(){
       overlay.style.visibility = 'visible';
-    }, 300);
-
+    }, 500);
     missed = 0;
   }
 }
