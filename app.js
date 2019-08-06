@@ -86,16 +86,19 @@ function checkWin(score) {
   if (score >= 5) {
     overlay.classList.add("lose");
     startButton.textContent = 'Try Again';
-    msg.textContent = 'You lose';
+    msg.textContent = 'You Lose!';
     overlay.appendChild(msg);
     overlay.style.visibility = 'visible';
     missed = 0;
   } else if (numberOfLetters === numberOfShow) {
     overlay.classList.add("win");
     startButton.textContent = 'Try Again';
-    msg.textContent = 'You won';
+    msg.textContent = 'You Won!';
     overlay.appendChild(msg);
-    overlay.style.visibility = 'visible';
+    setTimeout(function(){
+      overlay.style.visibility = 'visible';
+    }, 300);
+
     missed = 0;
   }
 }

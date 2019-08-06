@@ -15,15 +15,15 @@
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out; */
 
-  --color-win: #78CF82;
-  --color-lose: #D94545;
+  --color-win: #5fc0c9;
+  --color-lose: #d55b50;
   --color-start: #2d2e45;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 50px;
-  --font-size-medium: 20px;
+  --font-size-medium: 30px;
   --font-size-small: 17px;
   --transition: all .2s ease-in-out;
   --color-btn-start: #da9057;
@@ -109,8 +109,17 @@ button {
 }
 
 .show {
-  color: #000;
-  background-color: #76CE82;
+  color: #FFF;
+  background-color: var(--color-win);
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0%   { transform:  rotate(0deg); }
+  10%  { transform:  rotate(-5deg); }
+  30%  { transform:  rotate(5deg); }
+  50%  { transform:  scale(1.1) rotate(-5deg); }
+  100% { transform:  scale(1) rotate(0deg); }
 }
 
 /* Keyboard */
@@ -161,7 +170,7 @@ button {
 }
 
 .start a {
-  color: #FFFFFF;;
+  color: #FFFFFF;
 }
 
 .win {
@@ -178,4 +187,15 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+.lose p, .win p {
+  color: #FFFFFF;
+  font-size: var(--font-size-medium);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.lose .btn__reset, .win .btn__reset {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 0px 0px rgba(200, 200, 200, 0.75);
 }
